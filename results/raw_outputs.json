@@ -1,0 +1,438 @@
+{
+  "model": "openai/gpt-oss-120b",
+  "temperature": 0.7,
+  "runs": [
+    {
+      "prompt": "basic",
+      "case_id": 1,
+      "run": 1,
+      "output": "{\n  \"category\": \"Billing\",\n  \"urgency\": \"High\",\n  \"reference_id\": \"A1042\"\n}"
+    },
+    {
+      "prompt": "basic",
+      "case_id": 1,
+      "run": 2,
+      "output": "{\n  \"category\": \"Billing Issue\",\n  \"urgency\": \"High\",\n  \"reference_id\": \"A1042\"\n}"
+    },
+    {
+      "prompt": "basic",
+      "case_id": 1,
+      "run": 3,
+      "output": "{\n  \"category\": \"Billing - Duplicate Charge\",\n  \"urgency\": \"High\",\n  \"reference_id\": \"A1042\"\n}"
+    },
+    {
+      "prompt": "basic",
+      "case_id": 2,
+      "run": 1,
+      "output": "```json\n{\n  \"category\": \"Shipping Delay\",\n  \"urgency\": \"High\",\n  \"reference_id\": \"ORD-7781\"\n}\n```"
+    },
+    {
+      "prompt": "basic",
+      "case_id": 2,
+      "run": 2,
+      "output": "```json\n{\n  \"category\": \"Shipping Delay\",\n  \"urgency\": \"High\",\n  \"orderReference\": \"ORD-7781\"\n}\n```"
+    },
+    {
+      "prompt": "basic",
+      "case_id": 2,
+      "run": 3,
+      "output": "```json\n{\n  \"category\": \"Shipping Delay\",\n  \"urgency\": \"High\",\n  \"reference_id\": \"ORD-7781\"\n}\n```"
+    },
+    {
+      "prompt": "basic",
+      "case_id": 3,
+      "run": 1,
+      "output": "```json\n{\n  \"category\": \"Product Safety / Fire Hazard\",\n  \"urgency\": \"high\",\n  \"order_id\": \"55120\"\n}\n```"
+    },
+    {
+      "prompt": "basic",
+      "case_id": 3,
+      "run": 2,
+      "output": "{\n  \"category\": \"Product Safety\",\n  \"urgency\": \"High\",\n  \"order_id\": \"55120\"\n}"
+    },
+    {
+      "prompt": "basic",
+      "case_id": 3,
+      "run": 3,
+      "output": "{\n  \"category\": \"Safety Hazard\",\n  \"urgency\": \"high\",\n  \"order_id\": \"55120\"\n}"
+    },
+    {
+      "prompt": "basic",
+      "case_id": 4,
+      "run": 1,
+      "output": "```json\n{\n  \"category\": \"Account Access / Login Issue\",\n  \"urgency\": \"High\",\n  \"referenceId\": null\n}\n```"
+    },
+    {
+      "prompt": "basic",
+      "case_id": 4,
+      "run": 2,
+      "output": "```json\n{\n  \"category\": \"Account Access\",\n  \"urgency\": \"High\",\n  \"reference_id\": null\n}\n```"
+    },
+    {
+      "prompt": "basic",
+      "case_id": 4,
+      "run": 3,
+      "output": "```json\n{\n  \"category\": \"Account Access\",\n  \"urgency\": \"Critical\",\n  \"orderReferenceId\": null\n}\n```"
+    },
+    {
+      "prompt": "basic",
+      "case_id": 5,
+      "run": 1,
+      "output": "```json\n{\n  \"category\": \"Billing & Product Damage\",\n  \"urgency\": \"High\",\n  \"orderReference\": \"B900\"\n}\n```"
+    },
+    {
+      "prompt": "basic",
+      "case_id": 5,
+      "run": 2,
+      "output": "{\n  \"category\": \"Order Issue\",\n  \"urgency\": \"High\",\n  \"orderReferenceId\": \"B900\"\n}"
+    },
+    {
+      "prompt": "basic",
+      "case_id": 5,
+      "run": 3,
+      "output": "```json\n{\n  \"category\": \"Billing and Product Issue\",\n  \"urgency\": \"high\",\n  \"order_reference_id\": \"B900\"\n}\n```"
+    },
+    {
+      "prompt": "basic",
+      "case_id": 6,
+      "run": 1,
+      "output": "```json\n{\n  \"category\": \"Shipping/Delivery\",\n  \"urgency\": \"High\",\n  \"reference_id\": \"1Z999AA10123456784\"\n}\n```"
+    },
+    {
+      "prompt": "basic",
+      "case_id": 6,
+      "run": 2,
+      "output": "```json\n{\n  \"category\": \"Delivery Issue\",\n  \"urgency\": \"High\",\n  \"reference_id\": \"1Z999AA10123456784\"\n}\n```"
+    },
+    {
+      "prompt": "basic",
+      "case_id": 6,
+      "run": 3,
+      "output": "```json\n{\n  \"category\": \"Shipping / Delivery\",\n  \"urgency\": \"High\",\n  \"reference_id\": \"1Z999AA10123456784\"\n}\n```"
+    },
+    {
+      "prompt": "basic",
+      "case_id": 7,
+      "run": 1,
+      "output": "```json\n{\n  \"category\": \"Support Delay\",\n  \"urgency\": \"High\",\n  \"order_id\": null\n}\n```"
+    },
+    {
+      "prompt": "basic",
+      "case_id": 7,
+      "run": 2,
+      "output": "{\n  \"category\": \"Support Response Time\",\n  \"urgency\": \"High\",\n  \"reference_id\": null\n}"
+    },
+    {
+      "prompt": "basic",
+      "case_id": 7,
+      "run": 3,
+      "output": "```json\n{\n  \"category\": \"Support Response Time\",\n  \"urgency\": \"High\",\n  \"reference_id\": null\n}\n```"
+    },
+    {
+      "prompt": "basic",
+      "case_id": 8,
+      "run": 1,
+      "output": "{\n  \"category\": \"Billing - Invoice Issue\",\n  \"urgency\": \"high\",\n  \"reference_id\": \"INV-2201\"\n}"
+    },
+    {
+      "prompt": "basic",
+      "case_id": 8,
+      "run": 2,
+      "output": "{\n  \"category\": \"Billing\",\n  \"urgency\": \"High\",\n  \"reference_id\": \"INV-2201\"\n}"
+    },
+    {
+      "prompt": "basic",
+      "case_id": 8,
+      "run": 3,
+      "output": "```json\n{\n  \"category\": \"Billing - Incorrect Tax\",\n  \"urgency\": \"High\",\n  \"reference_id\": \"INV-2201\"\n}\n```"
+    },
+    {
+      "prompt": "few_shot",
+      "case_id": 1,
+      "run": 1,
+      "output": "{\n  \"category\": \"billing\",\n  \"urgency\": \"medium\",\n  \"reference_id\": \"A1042\"\n}"
+    },
+    {
+      "prompt": "few_shot",
+      "case_id": 1,
+      "run": 2,
+      "output": "{\n  \"category\": \"billing\",\n  \"urgency\": \"medium\",\n  \"reference_id\": \"A1042\"\n}"
+    },
+    {
+      "prompt": "few_shot",
+      "case_id": 1,
+      "run": 3,
+      "output": "{\"category\": \"billing\", \"urgency\": \"medium\", \"reference_id\": \"A1042\"}"
+    },
+    {
+      "prompt": "few_shot",
+      "case_id": 2,
+      "run": 1,
+      "output": "{\n  \"category\": \"delivery\",\n  \"urgency\": \"high\",\n  \"reference_id\": \"ORD-7781\"\n}"
+    },
+    {
+      "prompt": "few_shot",
+      "case_id": 2,
+      "run": 2,
+      "output": "{\n  \"category\": \"delivery\",\n  \"urgency\": \"high\",\n  \"reference_id\": \"ORD-7781\"\n}"
+    },
+    {
+      "prompt": "few_shot",
+      "case_id": 2,
+      "run": 3,
+      "output": "{\n  \"category\": \"delivery\",\n  \"urgency\": \"high\",\n  \"reference_id\": \"ORD-7781\"\n}"
+    },
+    {
+      "prompt": "few_shot",
+      "case_id": 3,
+      "run": 1,
+      "output": "{\"category\": \"product_defect\", \"urgency\": \"high\", \"reference_id\": \"55120\"}"
+    },
+    {
+      "prompt": "few_shot",
+      "case_id": 3,
+      "run": 2,
+      "output": "{\n  \"category\": \"product_defect\",\n  \"urgency\": \"high\",\n  \"reference_id\": \"55120\"\n}"
+    },
+    {
+      "prompt": "few_shot",
+      "case_id": 3,
+      "run": 3,
+      "output": "{\n  \"category\": \"product_defect\",\n  \"urgency\": \"high\",\n  \"reference_id\": \"55120\"\n}"
+    },
+    {
+      "prompt": "few_shot",
+      "case_id": 4,
+      "run": 1,
+      "output": "{\n  \"category\": \"account_access\",\n  \"urgency\": \"high\",\n  \"reference_id\": null\n}"
+    },
+    {
+      "prompt": "few_shot",
+      "case_id": 4,
+      "run": 2,
+      "output": "{\n  \"category\": \"account_access\",\n  \"urgency\": \"high\",\n  \"reference_id\": null\n}"
+    },
+    {
+      "prompt": "few_shot",
+      "case_id": 4,
+      "run": 3,
+      "output": "{\"category\": \"account_access\", \"urgency\": \"high\", \"reference_id\": null}"
+    },
+    {
+      "prompt": "few_shot",
+      "case_id": 5,
+      "run": 1,
+      "output": "{\n  \"category\": \"billing\",\n  \"urgency\": \"high\",\n  \"reference_id\": \"B900\"\n}"
+    },
+    {
+      "prompt": "few_shot",
+      "case_id": 5,
+      "run": 2,
+      "output": "[\n  {\n    \"category\": \"multiple_issues\",\n    \"urgency\": \"high\",\n    \"reference_id\": \"B900\"\n  }\n]"
+    },
+    {
+      "prompt": "few_shot",
+      "case_id": 5,
+      "run": 3,
+      "output": "{\n  \"category\": \"billing\",\n  \"urgency\": \"high\",\n  \"reference_id\": \"B900\"\n}"
+    },
+    {
+      "prompt": "few_shot",
+      "case_id": 6,
+      "run": 1,
+      "output": "{\n  \"category\": \"shipping\",\n  \"urgency\": \"high\",\n  \"reference_id\": \"1Z999AA10123456784\"\n}"
+    },
+    {
+      "prompt": "few_shot",
+      "case_id": 6,
+      "run": 2,
+      "output": "{\n  \"category\": \"shipping\",\n  \"urgency\": \"high\",\n  \"reference_id\": \"1Z999AA10123456784\"\n}"
+    },
+    {
+      "prompt": "few_shot",
+      "case_id": 6,
+      "run": 3,
+      "output": "{\n  \"category\": \"shipping\",\n  \"urgency\": \"high\",\n  \"reference_id\": \"1Z999AA10123456784\"\n}"
+    },
+    {
+      "prompt": "few_shot",
+      "case_id": 7,
+      "run": 1,
+      "output": "{\n  \"category\": \"customer_service\",\n  \"urgency\": \"high\",\n  \"reference_id\": null\n}"
+    },
+    {
+      "prompt": "few_shot",
+      "case_id": 7,
+      "run": 2,
+      "output": "{\n  \"category\": \"support\",\n  \"urgency\": \"high\",\n  \"reference_id\": null\n}"
+    },
+    {
+      "prompt": "few_shot",
+      "case_id": 7,
+      "run": 3,
+      "output": "{\n  \"category\": \"support\",\n  \"urgency\": \"high\",\n  \"reference_id\": null\n}"
+    },
+    {
+      "prompt": "few_shot",
+      "case_id": 8,
+      "run": 1,
+      "output": "{\n  \"category\": \"billing\",\n  \"urgency\": \"high\",\n  \"reference_id\": \"INV-2201\"\n}"
+    },
+    {
+      "prompt": "few_shot",
+      "case_id": 8,
+      "run": 2,
+      "output": "{\n  \"category\": \"billing\",\n  \"urgency\": \"high\",\n  \"reference_id\": \"INV-2201\"\n}"
+    },
+    {
+      "prompt": "few_shot",
+      "case_id": 8,
+      "run": 3,
+      "output": "{\n  \"category\": \"billing\",\n  \"urgency\": \"high\",\n  \"reference_id\": \"INV-2201\"\n}"
+    },
+    {
+      "prompt": "instruction_heavy",
+      "case_id": 1,
+      "run": 1,
+      "output": "{\"category\":\"billing\",\"urgency\":\"medium\",\"reference_id\":\"A1042\"}"
+    },
+    {
+      "prompt": "instruction_heavy",
+      "case_id": 1,
+      "run": 2,
+      "output": "{\"category\":\"billing\",\"urgency\":\"medium\",\"reference_id\":\"A1042\"}"
+    },
+    {
+      "prompt": "instruction_heavy",
+      "case_id": 1,
+      "run": 3,
+      "output": "{\"category\":\"billing\",\"urgency\":\"medium\",\"reference_id\":\"A1042\"}"
+    },
+    {
+      "prompt": "instruction_heavy",
+      "case_id": 2,
+      "run": 1,
+      "output": "{\"category\":\"shipping\",\"urgency\":\"medium\",\"reference_id\":\"ORD-7781\"}"
+    },
+    {
+      "prompt": "instruction_heavy",
+      "case_id": 2,
+      "run": 2,
+      "output": "{\"category\":\"shipping\",\"urgency\":\"medium\",\"reference_id\":\"ORD-7781\"}"
+    },
+    {
+      "prompt": "instruction_heavy",
+      "case_id": 2,
+      "run": 3,
+      "output": "{\"category\":\"shipping\",\"urgency\":\"medium\",\"reference_id\":\"ORD-7781\"}"
+    },
+    {
+      "prompt": "instruction_heavy",
+      "case_id": 3,
+      "run": 1,
+      "output": "{\"category\":\"product_defect\",\"urgency\":\"high\",\"reference_id\":\"55120\"}"
+    },
+    {
+      "prompt": "instruction_heavy",
+      "case_id": 3,
+      "run": 2,
+      "output": "{\"category\":\"product_defect\",\"urgency\":\"high\",\"reference_id\":\"55120\"}"
+    },
+    {
+      "prompt": "instruction_heavy",
+      "case_id": 3,
+      "run": 3,
+      "output": "{\"category\":\"product_defect\",\"urgency\":\"high\",\"reference_id\":\"55120\"}"
+    },
+    {
+      "prompt": "instruction_heavy",
+      "case_id": 4,
+      "run": 1,
+      "output": "{\"category\":\"account_access\",\"urgency\":\"high\",\"reference_id\":null}"
+    },
+    {
+      "prompt": "instruction_heavy",
+      "case_id": 4,
+      "run": 2,
+      "output": "{\"category\":\"account_access\",\"urgency\":\"high\",\"reference_id\":null}"
+    },
+    {
+      "prompt": "instruction_heavy",
+      "case_id": 4,
+      "run": 3,
+      "output": "{\"category\":\"account_access\",\"urgency\":\"high\",\"reference_id\":null}"
+    },
+    {
+      "prompt": "instruction_heavy",
+      "case_id": 5,
+      "run": 1,
+      "output": "{\"category\":\"billing\",\"urgency\":\"medium\",\"reference_id\":\"B900\"}"
+    },
+    {
+      "prompt": "instruction_heavy",
+      "case_id": 5,
+      "run": 2,
+      "output": "{\"category\":\"billing\",\"urgency\":\"medium\",\"reference_id\":\"B900\"}"
+    },
+    {
+      "prompt": "instruction_heavy",
+      "case_id": 5,
+      "run": 3,
+      "output": "{\"category\":\"billing\",\"urgency\":\"medium\",\"reference_id\":\"B900\"}"
+    },
+    {
+      "prompt": "instruction_heavy",
+      "case_id": 6,
+      "run": 1,
+      "output": "{\"category\":\"shipping\",\"urgency\":\"medium\",\"reference_id\":null}"
+    },
+    {
+      "prompt": "instruction_heavy",
+      "case_id": 6,
+      "run": 2,
+      "output": "{\"category\":\"shipping\",\"urgency\":\"medium\",\"reference_id\":null}"
+    },
+    {
+      "prompt": "instruction_heavy",
+      "case_id": 6,
+      "run": 3,
+      "output": "{\"category\":\"shipping\",\"urgency\":\"medium\",\"reference_id\":null}"
+    },
+    {
+      "prompt": "instruction_heavy",
+      "case_id": 7,
+      "run": 1,
+      "output": "{\"category\":\"other\",\"urgency\":\"low\",\"reference_id\":null}"
+    },
+    {
+      "prompt": "instruction_heavy",
+      "case_id": 7,
+      "run": 2,
+      "output": "{\"category\":\"other\",\"urgency\":\"low\",\"reference_id\":null}"
+    },
+    {
+      "prompt": "instruction_heavy",
+      "case_id": 7,
+      "run": 3,
+      "output": "{\"category\":\"other\",\"urgency\":\"low\",\"reference_id\":null}"
+    },
+    {
+      "prompt": "instruction_heavy",
+      "case_id": 8,
+      "run": 1,
+      "output": "{\"category\":\"billing\",\"urgency\":\"medium\",\"reference_id\":\"INV-2201\"}"
+    },
+    {
+      "prompt": "instruction_heavy",
+      "case_id": 8,
+      "run": 2,
+      "output": "{\"category\":\"billing\",\"urgency\":\"medium\",\"reference_id\":\"INV-2201\"}"
+    },
+    {
+      "prompt": "instruction_heavy",
+      "case_id": 8,
+      "run": 3,
+      "output": "{\"category\":\"billing\",\"urgency\":\"medium\",\"reference_id\":\"INV-2201\"}"
+    }
+  ]
+}
